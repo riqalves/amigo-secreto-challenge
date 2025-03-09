@@ -11,10 +11,6 @@ function limparLista(){
     listaNomes.remove(listaNomes)
 }
 
-function limparResultado(){
-    resultado.remove(resultado)
-}
-
 function atualizarListaAmigos(arrayNomes){
 
     //* Exibe o ultimo nome adicionado
@@ -46,8 +42,6 @@ function gerarNumeroAleatorio(tamanhoLista){
 function sortearAmigo(){
     if(arrayNomes.length == 0) {return alert ("adicione um nome antes")} 
     numeroEscolhido = gerarNumeroAleatorio(arrayNomes.length)
-    console.log(numeroEscolhido)
-    console.log("O escolhido foi: " + arrayNomes[numeroEscolhido-1])
     limparLista(arrayNomes)
     resultado.innerHTML += `<li>O escolhido: ${arrayNomes[numeroEscolhido-1]}</li>`
 }
