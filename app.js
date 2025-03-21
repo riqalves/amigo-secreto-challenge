@@ -15,7 +15,7 @@ function atualizarListaAmigos(arrayNomes){
 
     //* Exibe o ultimo nome adicionado
     let ultimoNome = arrayNomes[arrayNomes.length -1]
-    listaNomes.innerHTML += `<li>Lista: ${ultimoNome}</li>`
+    listaNomes.innerHTML += `<li>${ultimoNome}</li>`
 }
 
 function adicionarAmigo(){
